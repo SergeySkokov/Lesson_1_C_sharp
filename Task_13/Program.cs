@@ -4,12 +4,15 @@ int number = int.Parse(Console.ReadLine());
 
 int count = 1;
 int temp = number;
-
-while (temp / 10 != 0)
+if (number > 99 && number < 1000)
 {
-    temp = temp /10;
-    count *=10;
-}
-count = count / 100;
-int result = (number / count) % 10;
-Console.WriteLine("Третьей цифрой числа " + number + " является " + result);
+    while (temp / 10 != 0)
+    {
+        temp = temp /10;
+        count *=10;
+    }
+    count = count / 100;
+    int result = (number / count) % 10;
+
+    Console.WriteLine("Третьей цифрой числа " + number + " является " + result);
+} else Console.WriteLine("Третьего числа нет.");
