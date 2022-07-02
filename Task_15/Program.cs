@@ -26,4 +26,5 @@ switch (weekDay)
         System.Console.WriteLine("Воскресенье");
         break;
     default: Console.WriteLine("Вы ввели неверное число");
+        break;
 }
