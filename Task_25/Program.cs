@@ -7,7 +7,7 @@ int firstNumber = int.Parse(Console.ReadLine());
 Console.Write("Введите число В:");
 int secondNumber = int.Parse(Console.ReadLine());
 int result = Pow(firstNumber, secondNumber);
-PrintPow(result);
+PrintPow(firstNumber, secondNumber, result);
 
 
 static int Pow(int numA, int numB)
@@ -20,7 +20,7 @@ static int Pow(int numA, int numB)
     return numA;
 }
 
-static void PrintPow(int print)
+static void PrintPow(int firstnum, int secondnum, int res)
 {
-    Console.Write(print);
+    Console.Write($"Число {firstnum} в степени {secondnum} равно {res}");
 }
